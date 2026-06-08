@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Quinn Oudkerk's Web & App Development project portfolio showcasing coding, design, and creative computing work." />
+  <meta name="description" content="Quinn Oudkerk's game development portfolio showcasing Unity projects and interactive game design work." />
   <meta name="author" content="Quinn Oudkerk" />
 
   <title>Games | Quinn Oudkerk Portfolio</title>
@@ -25,9 +25,9 @@
 
       <ul class="navbar-right">
         <li><a href="index.html">Home</a></li>
-        <li><a href="projects.html" class="active">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="cfus.html">CFUs</a></li>
-        <li><a href="games.html">Games</a></li>
+        <li><a href="games.html" class="active">Games</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -35,53 +35,77 @@
 
   <main class="home-card">
 
-    <!-- PAGE HEADER -->
+    <!-- PAGE INTRO -->
     <section class="resource-card">
       <h1>My Games</h1>
       <p>
-        This page showcases a collection of the games that I have made throughout this process completed in Web & App Development.
-        Each game highlights different skills in coding, creativity, and problem-solving. These games were difficult but also fun to make.
-        Also seeing that I was able to have working and playable was really nice because I couldn't imagine myself being able to do that.
+        This page showcases games I developed during my Web & App Development coursework.
+        These projects demonstrate skills in programming, game design, problem-solving, and creativity using Unity.
       </p>
     </section>
 
-    <!-- PROJECT 1 -->
+    <!-- GAME 1 -->
     <section class="resource-card">
       <div class="project">
 
-        <iframe src="https://play.unity.com/api/v1/games/game/66459046-01dd-4352-9b1d-1a0692a4274c/build/latest/frame" title="Space Blaster"></iframe>
+        <iframe 
+          src="https://play.unity.com/api/v1/games/game/66459046-01dd-4352-9b1d-1a0692a4274c/build/latest/frame" 
+          title="Space Blaster Game">
+        </iframe>
 
         <div class="reflection">
           <h3>Space Blaster</h3>
           <p>
-            This game is my favorite game and also favorite thing that I have worked on because it demonstrates creativity and my skills to be able to make a game.
-            I created a space themed game where you are able to control this spaceship and you have to defeat all of the enemies to progress to the next level.
-            There are 4 levels and a boss fight at the end. This was a difficult but fun process and it ended up paying off.
+            Space Blaster is a space-themed action game where the player controls a spaceship and must defeat enemies to progress through multiple levels.
+            The game includes four levels and a final boss fight.
           </p>
-          <p><strong>Skills:</strong> Unity, Game Design</p>
+
+          <p>
+            This project helped me develop stronger skills in game mechanics, level design, and problem-solving under development constraints.
+          </p>
+
+          <p><strong>Skills:</strong> Unity, Game Design, Level Design</p>
         </div>
 
       </div>
     </section>
 
-    <!-- PROJECT 2 -->
+    <!-- GAME 2 -->
     <section class="resource-card">
       <div class="project">
 
-        <iframe src="https://play.unity.com/api/v1/games/game/b2510281-6690-4d52-bd82-894e71f11445/build/latest/frame" title="Forest Adventure"></iframe>
+        <iframe 
+          src="https://play.unity.com/api/v1/games/game/b2510281-6690-4d52-bd82-894e71f11445/build/latest/frame" 
+          title="Forest Adventure Game">
+        </iframe>
 
         <div class="reflection">
           <h3>Forest Adventure</h3>
           <p>
-            In this game, you have to go around the forest getting all of the collectibles and making it to the end to win the game.
-            I didn't really get to expand on my idea for this game because I was running out of time so I did the best that I could do with what I had.
-            This helped me improve my understanding of time mangement and going in depth about game design.
+            Forest Adventure is a collectible-based exploration game set in a forest environment.
+            The objective is to collect items and reach the end of the level to complete the game.
           </p>
-          <p><strong>Skills:</strong> Unity, Game Design</p>
+
+          <p>
+            Due to time limitations, the project scope was reduced; however, it provided valuable experience in planning, prioritization, and time management in game development.
+          </p>
+
+          <p><strong>Skills:</strong> Unity, Game Design, Time Management</p>
         </div>
 
       </div>
     </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© <span id="year"></span> Quinn Oudkerk | Web & App Development Portfolio</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
